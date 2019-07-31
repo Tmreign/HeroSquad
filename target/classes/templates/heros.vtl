@@ -1,0 +1,26 @@
+<h1>Hero Squad</h1>
+
+<h1>Hero list!</h1>
+#if ($heros)
+   <table>
+   <tr>
+       <th>Name</th>
+       <th>Age</th>
+       <th>Superpower</th>
+       <th>Weakness</th>
+   </tr>
+   #foreach ($hero in $heros)
+   <tr>
+       <td>$hero.getName()</td>
+       <td>$hero.getAge()</td>
+       <td>$hero.getSuperpower()</td>
+       <td>$hero.getWeakness()</td>
+     </tr>
+      #end
+   </table>
+   <a href ='/'>Go Back</a>
+   <a href="/heros/new" class= "norm">Add a  Hero</a>
+#else
+ <a href="/heros/new" class= "norm">Add a new Hero</a>
+#end
+

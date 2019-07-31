@@ -1,0 +1,11 @@
+#if ($heroExists)
+  <h2 class="display-3">Failed!</h2>
+  <br>
+  Your hero could not be saved. $heroExists.
+  #else
+    <h2 class="display-3">Success!</h2>
+    <br>
+    Your hero has been saved to the $squad.getName() squad.
+#end
+<br><br>
+<a href="/squads" class= "norm">View squads</a>
