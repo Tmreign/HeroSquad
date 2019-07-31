@@ -8,7 +8,7 @@ This is a spark application where one can add his favorite hero in his squad.
 ## Contributors
 ```
 The contributors of this project were:
-* Linus Muema (linus.m.muema@gmail.com)
+* Tom
 ```
 
 ## Technologies used

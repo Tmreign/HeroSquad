@@ -1,0 +1,11 @@
+<h1>All Squads</h1>
+#if($squads)
+<ol>
+  #foreach ($squad in $squads)
+    <li><a href="/squads/$squad.getId()">$squad.getName()</a></li>
+  #end
+</ol>
+#else
+ <h3> You have no Squads yet!</h3>
+ #end
+<a href="/squads/new" class="norm" class= "norm">Add New Squad</a>
